@@ -1,0 +1,30 @@
+package com.mycompany.gross;
+
+import java.util.Scanner;
+
+
+public class Gross {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num ;
+        boolean found = false ;
+        while(!found){
+            System.out.println("Enter a nuber : ");
+            num = in.nextInt();
+            if(num > 0 && num <= 100){
+                System.out.println("Suitable");
+                found = true ;
+                break;
+                }
+            else if(num < 0){
+                System.out.println("Unsuitable");   
+                }
+            else if(num > 100){
+                System.out.println("Enter a valid Number");    
+                }
+            else
+                System.out.println("Equals Zero");
+                }
+    }
+}
