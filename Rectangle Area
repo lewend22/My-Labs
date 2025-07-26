@@ -1,0 +1,22 @@
+
+package com.mycompany.rectanglearea;
+
+import java.util.Scanner;
+
+
+public class RectangleArea {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        float length ,width  ;
+        double Area  ;
+        System.out.println("this Program to Calculation rectangle Area.\nEnter the length and width");
+            System.out.println("The length : ");
+            length = in.nextFloat();
+            System.out.println("The width : ");
+            width = in.nextFloat();
+        Area = (length*width) ;
+        System.out.println("The Area equals "+Area+"m²");
+        
+    }
+}
