@@ -1,0 +1,20 @@
+package com.mycompany.age;
+
+import java.util.Scanner;
+
+
+public class Age {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int age ; 
+        System.out.println("This Program will calculate your age from your date of birth.\nEnter you date of birth as example \"2003\" :");
+        age = in.nextInt();
+        age = 2025 - age ;
+        System.out.println("Your Age is "+age+" years old.");
+        System.out.println("Your Age in day is "+(age*365));
+        System.out.println("Your Age in hour is "+(age*365)*24);
+        System.out.println("Your Age in minutes is "+((age*365)*(24*60)));
+        System.out.println("Your Age in Second is "+(age*365)*((24*60)*60));
+    }
+}
