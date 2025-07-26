@@ -9,7 +9,7 @@ public class SumOfArray {
         Scanner in = new Scanner(System.in);
         int count ;
         int sum = 0;
-        System.out.println("How many number do you wnt enter it : ");
+        System.out.println("How many number do you wnt enter  : ");
         count = in.nextInt();
         int num[]=new int[count-1];
         for(int i = 0 ;i < num.length ;i++){
