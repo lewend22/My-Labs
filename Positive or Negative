@@ -1,0 +1,22 @@
+package com.mycompany.positiveornegative;
+
+import java.util.Scanner;
+
+
+public class PositiveOrNegative {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("This Program is used to check if a number is positive,negative, or equal to zero");
+        System.out.println("Enter a number : ");
+        long input = in.nextLong();
+        if(input > 0 ){
+            System.out.println("Positive Number");
+        }
+        else if(input < 0 ){
+            System.out.println("Negative Number");
+        }
+        else
+            System.out.println("Equal zero");
+    }
+}
