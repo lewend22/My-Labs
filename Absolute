@@ -1,0 +1,17 @@
+package com.mycompany.absolute;
+
+import java.util.Scanner;
+
+
+public class Absolute {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int num = in.nextInt();
+        if(num < 0){
+            System.out.println("|num| = "+(-1*num));
+        }else
+            System.out.println("|num| = "+num);
+    }
+}
