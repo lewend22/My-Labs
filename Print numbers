@@ -1,0 +1,16 @@
+package com.mycompany.printnumbers;
+
+import java.util.Scanner;
+
+
+public class PrintNumbers {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("This app will display all the numbers from the number you enter down to zero\nEnter a Number : ");
+        int input = in.nextInt();
+        for(int i = input; i >= 0 ;i--){
+            System.out.println(i);
+        }
+        System.out.println("The End");
+    }
+}
