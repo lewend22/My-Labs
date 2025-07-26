@@ -1,0 +1,23 @@
+package com.mycompany.letter;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Letter {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int count = 0 ; 
+        System.out.println("Enter a any massage : ");
+        String input = in.nextLine();
+        System.out.println("Enter any letter do you want to know how many times it was repeated : ");
+        char check = in.next().charAt(0);
+        char toArr[] = input.toCharArray();
+        for (int i = 0; i < toArr.length ; i++) {
+            if(toArr[i] == check){
+                count++;
+            }
+        }
+        System.out.println("letter ["+check+"] repeated "+count+" times");
+    }
+}
