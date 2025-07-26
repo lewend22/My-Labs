@@ -1,0 +1,27 @@
+package com.mycompany.name;
+
+import java.util.Scanner;
+import java.util.Arrays ;  
+
+public class Name {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        //String user[] = new char[]{}; 
+        System.out.println("Enter Username : ");
+        String input = in.nextLine();
+        char user[] = input.toCharArray();
+        
+        int count = 0;
+        for(int i = 0; i < user.length ;i++){
+            if(user[i] ==' '){
+                
+            }else{
+                System.out.print(user[i]);
+                count++;
+            }
+        }
+        System.out.println("");
+        System.out.println(count);
+    }
+}
