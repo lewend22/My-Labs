@@ -1,0 +1,21 @@
+package com.mycompany.average;
+
+import java.util.Scanner;
+
+
+public class Average {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("This Program to calculate the Average of the Numbers.\nJust enter how many number do you want to calculate the avrage of them");
+        int num = in.nextInt();
+        float input[] = new float[num];
+        double sum = 0 ;
+        for(int i = 0 ; i < input.length ;i++){
+            System.out.println("Enter Number #"+(i+1));
+            input[i] = in.nextFloat();
+            sum+= input[i]; 
+        }
+        System.out.println("Average = "+(sum/num));
+    }
+}
