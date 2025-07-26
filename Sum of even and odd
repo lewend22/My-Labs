@@ -1,0 +1,27 @@
+package com.mycompany.main;
+
+import java.util.Scanner;
+
+
+public class Main {
+   public static void sum(int num[]){
+       int sumEven = 0 ,sumOdd = 0;
+       for (int i = 0; i < num.length; i++) {
+          if(num[i]%2== 0){
+              sumEven+= num[i]; 
+          }
+          if(num[i]%2 != 0){
+              sumOdd+= num[i]; 
+          }
+       }
+       System.out.println("Sum of even numbers = "+sumEven);
+       System.out.println("Sum of odd numbers = "+sumOdd);
+       
+   }
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num[] = new int []{8,2,1,3,9,133,36,44,65,21,99};
+        Main.sum(num);
+}
+}
