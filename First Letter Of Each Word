@@ -1,0 +1,26 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a word of a text : ");
+        String input = in.nextLine();
+        char Input[] = input.toCharArray();
+        for (int i = 0; i < Input.length ;i++){
+            if(i == 0 && Input[i]>= 'a'&& Input[i]<= 'z'){
+                Input[i] = (char)(Input[i]-32);
+            }else if(Input[i]== ' ' && i+1< Input.length && Input[i+1]>= 'a' && Input[i+1]<= 'z'){
+                Input[i+1]=(char)(Input[i+1]-32);
+                i++;
+            }  
+        }
+        System.out.println("Modified sentence : ");
+        for(char c : Input){
+            System.out.print(c);
+        }
+        
+    }
+        }
