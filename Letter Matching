@@ -1,0 +1,22 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+
+public class Labs {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a Name (Country....) : ");
+        String name = in.next();
+        char Name[] = name.toCharArray();
+        if(Name[0]==Name[Name.length - 1]){
+            System.out.println("Name : ");
+            for (int i = Name.length - 1 ; i >= 0  ;i--) {
+                System.out.print(Name[i]);
+            }
+        
+        }else
+            System.out.println("Name : "+name);
+    }
+}
