@@ -1,0 +1,25 @@
+
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+   
+    static int sum(int n1 , int  n2){
+   // int upper , lower ;
+    if(n1 > n2){
+        return (n1-n2+1)*(n1+n2)/2 ;
+    }else
+        return (n2-n1+1)*(n1+n2)/2 ;
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter the first number : ");
+        int input = in.nextInt() ; 
+        System.out.println("Enter the scond number : ");
+        int  input1 = in.nextInt();
+        System.out.println("Sum = "+sum(input,input1));
+    }
+        }
+    
+
