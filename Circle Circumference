@@ -1,0 +1,20 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+    
+    static double CircleCircumference(){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter the radius value : ");
+        float radius = in.nextFloat();
+        
+            return radius*2*Math.PI ; 
+    }
+    public static void main(String[] args) {
+        System.out.println("Area = "+CircleCircumference()+" m");
+        
+    }
+        }
+    
+
