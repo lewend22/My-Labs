@@ -1,0 +1,20 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+    
+    static float squareCircumference(){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter the length of the side : ");
+        float length = in.nextFloat();
+        
+            return length*4 ; 
+    }
+    public static void main(String[] args) {
+        System.out.println("Area = "+squareCircumference()+" m");
+        
+    }
+        }
+    
+
