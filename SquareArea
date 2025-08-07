@@ -1,0 +1,18 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+    
+    static float squareArea(){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter the length of the side : ");
+        float length = in.nextFloat();
+        
+            return length*length ; 
+    }
+    public static void main(String[] args) {
+        System.out.println("Area = "+squareArea()+" m²");
+        
+    }
+        }
