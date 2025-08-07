@@ -12,7 +12,7 @@ public class Labs {
             return radius*2*Math.PI ; 
     }
     public static void main(String[] args) {
-        System.out.println("Area = "+CircleCircumference()+" m");
+        System.out.println("Circumference = "+CircleCircumference()+" m");
         
     }
         }
