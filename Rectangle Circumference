@@ -1,0 +1,20 @@
+package com.mycompany.labs;
+
+import java.util.Scanner;
+
+public class Labs {
+    
+    static double RectangleCircumference(){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter the length value : ");
+        float length = in.nextFloat();
+        System.out.println("Enter the width value : ");
+        float width = in.nextFloat();
+            return (length+width)*2 ; 
+    }
+    public static void main(String[] args) {
+        System.out.println("Area = "+RectangleCircumference()+" m");
+        
+    }
+        }
+    
