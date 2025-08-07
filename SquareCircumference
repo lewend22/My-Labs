@@ -12,7 +12,7 @@ public class Labs {
             return length*4 ; 
     }
     public static void main(String[] args) {
-        System.out.println("Area = "+squareCircumference()+" m");
+        System.out.println("Circumference  = "+squareCircumference()+" m");
         
     }
         }
