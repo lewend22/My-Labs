@@ -1,0 +1,25 @@
+package com.mycompany.oop;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+
+public class OOP extends ArrayList {
+
+    public static void main (String[] args) {
+    Scanner in = new Scanner(System.in);
+        OOP  p1 = new OOP();
+        p1.add(7);
+        p1.add(6);
+        p1.add(5);
+        p1.add(4);
+        p1.add(3);
+        p1.add(2);
+        p1.add(1);
+        p1.removeRange(3, 6);
+        System.out.println(p1);
+    }
+    
+}
