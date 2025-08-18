@@ -1,0 +1,27 @@
+package com.mycompany.oop;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class OOP {
+
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+        //Capacity = 10
+        ArrayList<String> list = new ArrayList();
+        
+        for(int i = 0 ;i < 10 ;i++){
+            System.out.println("Enter the Student name : #"+(i+1));
+            String input = in.next();
+            if(input.endsWith("exit")){
+                break ;
+            }else
+            list.add(input);
+          
+        }
+        
+        System.out.println(list);
+    }
+    
+}
