@@ -1,0 +1,108 @@
+package com.mycompany.calculator;
+
+import java.util.Scanner;
+
+public class Calculator {
+        public static double sum1;
+        public static void resume(double sum){
+            Scanner in = new Scanner (System.in);
+            char c = in.next().charAt(0);
+            if(c == '+' || c == '-' || c == '*' || c == '/' || c == '%'){
+                double input = in.nextDouble();
+            switch(c){
+                case '+' :
+                   sum1 = input + sum ;
+                    System.out.print("= "+sum1);
+                    resume(sum1);
+                break;    
+                case '-' :  
+                    sum1 =  sum - input;
+                    System.out.print("= "+sum1);
+                    resume(sum1);
+                break;
+                case '*' :
+                    sum1 =  sum * input ;
+                    System.out.print("= "+sum1);
+                    resume(sum1);
+                break;
+                case '/' :
+                    sum1 = sum / input ;
+                    System.out.print("= "+sum1);
+                    resume(sum1);
+                break;
+                case '%' :
+                    sum1 =  sum % input ;
+                    System.out.print("= "+sum1);
+                    resume(sum1);
+                break;
+                default:
+                    System.out.println("Enter a Valid Operator\n");
+            
+            }
+            }else{
+                System.out.println("Good Bye");
+                return  ; 
+            }
+        }
+        
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double num1 ,num2 ,num ;
+        char operator;
+        System.out.println("If you want to continue calculating, choose an operator and a number, then continue.\n" +
+                                                                                 "If you want to exit, press any Key");
+        while(true){
+        System.out.println("\nWelcome to my new Calculator\nEnter the first number : ");
+        num1 = in.nextDouble();
+        System.out.println("choose a Operator + - * / % ");
+        operator = in.next().charAt(0);
+        if(operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == '%'){
+            
+        switch(operator){
+            case '+' :
+                System.out.println("Enter the Second number : ");
+                num2 = in.nextDouble();
+                num = num1 + num2 ;
+                System.out.print("= "+num);
+                resume(num);
+            break;    
+            case '-' : 
+                System.out.println("Enter the Second number : ");
+                num2 = in.nextDouble();
+                num = num1 - num2 ;
+                System.out.print("= "+num);
+                resume(num);
+            break;
+            case '*' :
+                System.out.println("Enter the Second number : ");
+                num2 = in.nextDouble();
+                num = num1 * num2 ;
+                System.out.print("= "+num);
+                resume(num);
+            break;
+            case '/' :
+                System.out.println("Enter the Second number : ");
+                num2 = in.nextDouble();
+                num = num1 / num2 ;
+                System.out.print("= "+num);
+                resume(num);
+            break;
+            case '%' :
+                System.out.println("Enter the Second number : ");
+                num2 = in.nextDouble();
+                num = num1 % num2 ;
+                System.out.print("= "+num);
+                resume(num);
+            break;
+            default:
+                System.out.println("Enter a Valid Operator\n");
+                System.out.println("  +  -  *  /  %  ");
+        
+        }
+        }   else{
+                System.out.println("Good Bye");
+            return;
+                }
+        }
+    }
+}
