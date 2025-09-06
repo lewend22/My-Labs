@@ -1,0 +1,49 @@
+package com.mycompany.calculator;
+
+import java.util.Scanner;
+
+public class Calculator {
+    
+    public static double calculate(double num1, char operator, double num2) {
+        switch (operator) {
+            case '+': return num1 + num2;
+            case '-': return num1 - num2;
+            case '*': return num1 * num2;
+            case '/': 
+                if (num2 == 0) {
+                    System.out.println("Error: Division by zero!");
+                    return num1;
+                }
+                return num1 / num2;
+            case '%': return num1 % num2;
+            default:
+                System.out.println("Invalid operator!");
+                return num1;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Welcome to my Calculator!");
+        System.out.println("Enter first number: ");
+        double result = in.nextDouble();
+        
+        while (true) {
+            System.out.println("Choose operator (+ - * / %) or any other key to exit:");
+            char operator = in.next().charAt(0);
+
+            if (operator != '+' && operator != '-' && operator != '*' && operator != '/' && operator != '%') {
+                System.out.println("Good Bye!");
+                break;
+            }
+
+            System.out.println("Enter next number: ");
+            double num = in.nextDouble();
+
+            result = calculate(result, operator, num);
+            System.out.println("= " + result);
+        }
+
+        in.close();
+    }
+}
